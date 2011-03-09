@@ -4,7 +4,7 @@
  *
  */
 
- 
+/* FIXME: Use the WP call instead of the constant. */ 
 $css_url = WP_PLUGIN_URL.'/aaa-affiliate/css/pwtips.css';
 $css_file = WP_PLUGIN_DIR.'/aaa-affiliate/css/pwtips.css';
 
