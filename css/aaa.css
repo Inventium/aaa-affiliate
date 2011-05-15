@@ -2,3 +2,20 @@
  * AAA Affiliate CSS
  */
  
+.billboard {
+  
+  border: solid;
+  border-width: 2px 0px 3px 0px;  
+}
+
+.purple {
+  
+  border-color: #c0b;
+  background-color: #120015;   
+  color: #fff;
+  letter-spacing: 0.085em;
+  font-family: sans-serif;
+  text-align: justify;
+    
+  padding: 10px 10px 10px 10px;
+}

@@ -5,14 +5,16 @@
  */
 
 /* FIXME: Use the WP call instead of the constant. */ 
-$css_url = WP_PLUGIN_URL.'/aaa-affiliate/css/pwtips.css';
-$css_file = WP_PLUGIN_DIR.'/aaa-affiliate/css/pwtips.css';
+$css_url = WP_PLUGIN_URL.'/aaa-affiliate/css/aaa.css';
+$css_file = WP_PLUGIN_DIR.'/aaa-affiliate/css/aaa.css';
 
 $image_base_url = WP_PLUGIN_URL.'/aaa-affiliate/images/';
 $image_base_dir = WP_PLUGIN_DIR.'/aaa-affiliate/images/';
 
 $bluehost_link = "http://www.bluehost.com/track/doolin";
  
+
+wp_enqueue_style('aaa',$css_url);
 
 /**
  * http://wordpress.org/support/topic/shortcode-output-always-appearing-at-top-of-page-content
@@ -23,7 +25,8 @@ $bluehost_link = "http://www.bluehost.com/track/doolin";
  * TODO: get rid of the "echo" calls.
  */
  
- 
+
+  
 function bluehost_banner_300x50_05() {
   global $image_base_url;
   global $bluehost_link;
@@ -53,6 +56,9 @@ EOF;
   return $ad;  
 }
 add_shortcode('bhb2', 'bluehost_banner1_300x50_05');
+
+
+
 
 
 ?>
